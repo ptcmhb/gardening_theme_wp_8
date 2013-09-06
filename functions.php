@@ -1,4 +1,9 @@
 <?php
+function custom_excerpt_length( $length ) {
+	return 160;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 load_theme_textdomain('kubrick');
 
 $artThemeSettings = array(
