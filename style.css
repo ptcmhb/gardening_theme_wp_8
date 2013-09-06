@@ -1127,7 +1127,15 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
   min-width: 15px;
   min-height: 15px;
 }
-
+.art-postblock
+{
+  width: 390px;
+  float: left;
+}
+.art-post-inner > h4
+{
+  margin-top: 0px;
+}
 .art-block-body
 {
   position: relative;
@@ -1297,7 +1305,14 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
   z-index: 1;
   padding: 8px;
 }
-
+.main-post
+{
+  width:810px;
+}
+.main-post .art-blockcontent-body
+{
+  height:300px;
+}
 .art-blockcontent-tr, .art-blockcontent-tl, .art-blockcontent-br, .art-blockcontent-bl, .art-blockcontent-tc, .art-blockcontent-bc,.art-blockcontent-cr, .art-blockcontent-cl
 {
   position: absolute;
@@ -1309,6 +1324,13 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
   width: 14px;
   height: 14px;
   background-image: url('images/blockcontent_s.png');
+}
+
+.light > .art-blockcontent-tr,.light > .art-blockcontent-tl,.light > .art-blockcontent-br,.light > .art-blockcontent-bl
+{
+  width: 14px;
+  height: 14px;
+  background-image: url('images/postcontent_s.png');
 }
 
 .art-blockcontent-tl
@@ -1347,6 +1369,14 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
   background-image: url('images/blockcontent_h.png');
 }
 
+.light > .art-blockcontent-tc,.light > .art-blockcontent-bc
+{
+  left: 7px;
+  right: 7px;
+  height: 14px;
+  background-image: url('images/postcontent_h.png');
+}
+
 .art-blockcontent-tc
 {
   top: 0;
@@ -1357,6 +1387,14 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
 {
   bottom: 0;
   clip: rect(7px, auto, auto, auto);
+}
+
+.light > .art-blockcontent-cr,.light > .art-blockcontent-cl
+{
+  top: 7px;
+  bottom: 7px;
+  width: 14px;
+  background-image: url('images/postcontent_v.png');
 }
 
 .art-blockcontent-cr, .art-blockcontent-cl
@@ -1377,6 +1415,17 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
 {
   left: 0;
   clip: rect(auto, 7px, auto, auto);
+}
+
+.light > .art-blockcontent-cc
+{
+  position: absolute;
+  z-index: -1;
+  top: 7px;
+  left: 7px;
+  right: 7px;
+  bottom: 7px;
+  background-image: url('images/postcontent_c.png');
 }
 
 .art-blockcontent-cc
