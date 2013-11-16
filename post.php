@@ -46,7 +46,13 @@ foreach ($categories as $cat) {
          
             <div class="art-postcontent">
               <!-- article-content -->
+              <div class="art-postheadericons art-metadata-icons">
+                <?php the_time(__('F jS, Y', 'kubrick')) ?>
+              </div>
               <?php the_excerpt(__('Read the rest of this entry &raquo;', 'kubrick')); ?>
+              <div class="cleared">
+              </div><a href="<?php echo get_permalink( get_the_ID() ) ?>">
+                <?php echo __('Read more', 'kubrick') ?></a>
               <!-- /article-content -->
             </div>
             <div class="cleared"></div>
