@@ -43,7 +43,18 @@ $options = array (
                         "desc" => sprintf(__('<strong>XHTML:</strong> You can use these tags: <code>%s</code>', 'kubrick'), 'a, abbr, acronym, em, b, i, strike, strong, span'),
                         "id" => "art_footer_content",
                         "std" => $default_footer_content,
-                        "type" => "textarea")
+                        "type" => "textarea"),
+		array(  "name" => __( 'Categories', 'kubrick'),
+			"id" => "home_twocol_cats",
+			"type" => "multicheck",
+			"wptype" => "cat",
+			"std" => "",
+			"options" => $cat_ids),
+		array(  "name" => __( '	Number of posts to show on each category', 'kubrick'),
+			"id" => "home_twocol_num",
+			"std" => 4,
+			"type" => "select",
+			"options" => array(3,4,5,6,7,8,9,10))
           );
        
 	
