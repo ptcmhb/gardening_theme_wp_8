@@ -6,6 +6,14 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 load_theme_textdomain('kubrick');
 
+$cat_array = get_categories('parent=0&hide_empty=0');
+$site_cats = array();
+$cat_ids   = array();
+
+foreach ($cat_array as $categs) {
+	$cat_ids[] = $categs->cat_name;
+}
+
 $artThemeSettings = array(
 	'menu.showSubmenus' => false,
 	'menu.homeCaption' => "Home",
