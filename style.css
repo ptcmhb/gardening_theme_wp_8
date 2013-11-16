@@ -1135,6 +1135,7 @@ ul.art-vmenu ul li li li li li a:hover, ul.art-vmenu ul li li li li li a:hover.a
 .art-post-inner > h4
 {
   margin-top: 0px;
+  margin-bottom: 5px;
 }
 .art-block-body
 {
@@ -2154,7 +2155,10 @@ img.wp-smiley
   position: relative;
   z-index: 1;   
 }
-
+.art-post-inner a
+{
+  color: #2F6A2F;
+}
 #todays-events{
   position: relative;
   z-index: 11;    
